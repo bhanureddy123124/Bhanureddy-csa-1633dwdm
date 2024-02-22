@@ -1,0 +1,40 @@
+# Dataset
+data <- c(18, 18, 20, 20, 20, 20, 20, 20, 20, 21, 21, 21, 21, 25, 25, 25, 25, 25, 28, 28, 30, 30, 30)
+
+# (i) Equal-frequency partitioning method with a bin size of 3
+
+# Sort the dataset
+sorted_data <- sort(data)
+
+# Calculate the number of bins
+num_bins <- ceiling(length(sorted_data) / 3)
+
+# Partition the dataset using equal-frequency partitioning method
+partitioned_data <- cut(sorted_data, breaks = num_bins, labels = FALSE)
+
+# Display partitioned data
+print("Partitioned Data:")
+print(partitioned_data)
+
+# (ii) Data smoothing using bin means and bin boundary
+
+# Calculate bin means
+bin_means <- tapply(sorted_data, INDEX = partitioned_data, FUN = mean)
+
+# Calculate bin boundaries
+bin_boundaries <- unique(sorted_data)
+
+# Display bin means and bin boundaries
+print("Bin Means:")
+print(bin_means)
+print("Bin Boundaries:")
+print(bin_boundaries)
+
+# (iii) Plot Histogram for the given frequency division
+
+# Given frequency division
+frequency_data <- c(10, 10, 10, 10, 12, 14, 14, 14, 15, 15, 15, 15, 15, 15, 18, 18, 18, 18, 18)
+
+# Plot histogram
+hist(frequency_data, breaks = "FD", main = "Histogram for Frequency Division",
+     xlab = "Values", ylab = "Frequency")
