@@ -1,0 +1,15 @@
+
+data <- c(200, 300, 400, 600, 1000)
+
+min_value <- min(data)
+max_value <- max(data)
+min_max_normalized <- (data - min_value) / (max_value - min_value)
+
+mean_value <- mean(data)
+std_value <- sd(data)
+z_score_normalized <- (data - mean_value) / std_value
+
+print("Min-Max Normalized Data:")
+print(min_max_normalized)
+print("Z-Score Normalized Data:")
+print(z_score_normalized)
