@@ -1,0 +1,8 @@
+# Load the mtcars dataset
+data(mtcars)
+
+# Plot the first line (mpg)
+plot(mtcars$mpg, type = "l", col = "blue", xlab = "Index", ylab = "mpg", main = "mpg and qsec Comparison")
+
+# Add the second line (qsec)
+lines(mtcars$qsec, col = "red")
