@@ -1,0 +1,11 @@
+
+data(AirPassengers)
+
+start <- 100
+end <- 700
+bin_width <- 150
+
+hist(AirPassengers, breaks = seq(start, end, by = bin_width),
+     main = "Histogram of AirPassengers Dataset",
+     xlab = "Number of Passengers",
+     ylab = "Frequency")
