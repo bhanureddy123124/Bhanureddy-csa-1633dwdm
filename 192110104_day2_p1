@@ -1,0 +1,19 @@
+
+pref_B <- c(22, 28, 10)
+pref_C <- c(20, 40, 40)
+cov_B_C <- cov(pref_B, pref_C)
+print("Sample Covariance between B and C:")
+print(cov_B_C)
+
+preferences <- matrix(c(18, 2, 20, 22, 28, 10, 20, 40, 40), nrow = 3, byrow = TRUE)
+cov_matrix <- cov(preferences)
+print("Sample Covariance Matrix for Preferences:")
+print(cov_matrix)
+
+cor_B_C <- cor(pref_B, pref_C)
+print("Sample Correlation between B and C:")
+print(cor_B_C)
+
+cor_matrix <- cor(preferences)
+print("Sample Correlation Matrix for Preferences:")
+print(cor_matrix)
