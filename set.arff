@@ -1,0 +1,19 @@
+@relation bought
+@attribute m {y,n}
+@attribute o1 {y,n}
+@attribute n {y,n}
+@attribute k1 {y,n}
+@attribute e {y,n}
+@attribute y {y,n}
+@attribute d {y,n}
+@attribute a {y,n}
+@attribute u {y,n}
+@attribute o2 {y,n}
+@attribute i {y,n}
+@attribute k2 {y,n}
+@data
+y,y,y,y,y,y,n,n,n,n,n,n
+n,y,y,y,y,y,y,n,n,n,n,n
+y,n,n,y,n,n,n,y,n,n,n,n
+y,n,n,y,y,y,n,n,n,y,n,n
+n,y,y,n,y,n,n,n,n,n,y,y
